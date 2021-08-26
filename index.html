@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
+
+    <div class="container">
+        <!--Campus Life-->
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <!--1st Campus Life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="data:image/jpeg;base64,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">
+                    <h4 class="text-capitalize"><kbd>school Hostel</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </h5>
+                    <p class="text-muted text-left">It is a very homing & clean hostel.This is my dream hostel</p>
+                </div>
+                <!--2nd Campus Life-->
+                <div class="travel_mainDiv">
+                    <!--Give appropriate class below for the image img-responsive-->
+                    <img class="img-responsive" src="https://www.jpinternational.co.in/wp-content/uploads/2018/11/library1.jpg">
+                    <h4 class="text-capitalize"><kbd>school library</kbd></h4>
+                    <hr>
+                    <!--Give classes below text-success text-left-->
+                    <h5 class="text-capitalize"> <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+
+                    </h5>
+                    <p class="text-muted text-left">I love this place you can imagine & explore without distractions.</p>
+
+                </div>
+                <!--3rd Campus life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://www.jphschool.com/admin/photos/1481108129_1t_6.JPG">
+                    <!-- Give text-capitalize below to make the first letters in Capitals-->
+                    <h4 class="text-capitalize"><kbd>school auditorium</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"><span class="glyphicon glyphicon-star"></span>
+
+                        <span class="glyphicon glyphicon-star"></span>
+
+                        <span class="glyphicon glyphicon-star"></span>
+
+                        <span class="glyphicon glyphicon-star"></span>
+
+                        <span class="glyphicon glyphicon-star"></span>
+                    </h5>
+                    <!-- Give text-muted below to show the text in grey color-->
+                    <p class="text-left text-muted">The stage is amazing and there is so many places to sit</p>
+                </div>
+
+            </div>
+        </div>
+        <!--Achievements-->
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">school achievements</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+            Inter School Debate On Environment Pollution <i class="fa fa-sort-desc"></i>
+        </div>
+        <!--1st Achievement-->
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://www.webindia123.com/craft/asp/aspupload/Uploads/671/DrumKit4_Main.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Won first prize in inter school best out of waste
+                </h5>
+                <p>Write about this achievement</p>
+            </div>
+        </div>
+        <!--2nd Achievement-->
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+            Inter School Football Competition<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement2" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+
+                <img src="https://i.postimg.cc/sxcP1G1L/sm2.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="movie_text col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                <h5 class="text-success text-left text-capitalize">Came first in inter school tennis competition
+                </h5>
+                <p>Write about this achievement</p>
+            </div>
+        </div>
+
+        <!--3rd Achievement--->
+
+        <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3">
+            Inter School Science Project Competition<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement3" class="collapse">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text"id="achievementsID">
+                <img src="https://i.postimg.cc/zXzS67cY/sm3.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-left text-success text-capitalize">Won first price in inter school Science Project competition
+                </h5>
+                <p>Its was really fun and it was very interesting to make to model</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
